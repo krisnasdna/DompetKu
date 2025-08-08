@@ -7,7 +7,10 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky || true"
   },
   "dependencies": {
     "@nuxt/eslint": "^1.8.0",
@@ -34,6 +37,11 @@
     "@antfu/eslint-config": "^5.2.0",
     "eslint": "^9.32.0",
     "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.1.5",
     "shadcn-nuxt": "^2.2.0"
+  },
+  "lint-staged": {
+    "*": "npm run lint"
   }
 }

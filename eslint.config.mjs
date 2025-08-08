@@ -1,6 +1,7 @@
+import antfu from "@antfu/eslint-config";
+
 // @ts-check
-import withNuxt from './.nuxt/eslint.config.mjs'
-import antfu from '@antfu/eslint-config'
+import withNuxt from "./.nuxt/eslint.config.mjs";
 
 export default withNuxt(antfu({
   type: "app",
@@ -32,8 +33,12 @@ export default withNuxt(antfu({
       tsconfigRootDir: ".",
     }],
     "unicorn/filename-case": ["error", {
-      case: "camelCase",
+      cases: {
+        camelCase: true,
+        pascalCase: true,
+        kebabCase: true,
+      },
       ignore: ["README.md"],
     }],
   },
-}))
+}));

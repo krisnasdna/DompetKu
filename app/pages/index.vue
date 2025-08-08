@@ -1,3 +1,7 @@
+<script lang="ts" setup>
+
+</script>
+
 <template>
   <div>
     <div class="text-black text-2xl">
@@ -5,10 +9,6 @@
     </div>
   </div>
 </template>
-
-<script lang="ts" setup>
-
-</script>
 
 <style>
 

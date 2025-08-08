@@ -1,10 +1,10 @@
-<template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <NuxtPage/>
-  </div>
-</template>
-
 <script setup>
 
 </script>
+
+<template>
+  <div>
+    <NuxtRouteAnnouncer />
+    <NuxtPage />
+  </div>
+</template>
